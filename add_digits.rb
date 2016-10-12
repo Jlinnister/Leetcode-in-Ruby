@@ -10,5 +10,5 @@
 # Could you do it without any loop/recursion in O(1) runtime?
 
 def add_digits(num)
-    num == 0 ? 0 : (num - 1) % 9 + 1
+  num == 0 ? 0 : (num - 1) % 9 + 1
 end
