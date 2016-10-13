@@ -10,5 +10,5 @@
 # The result can be in any order.
 
 def intersection(nums1, nums2)
-    (nums1 & nums2).uniq
+  (nums1 & nums2).uniq
 end

@@ -18,6 +18,6 @@ def first_uniq_char(s)
   s.chars.each_with_index do |letter,idx|
     return idx if counts[letter] == 1
   end
-  
+
   -1
 end

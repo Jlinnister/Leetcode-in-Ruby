@@ -17,8 +17,8 @@
 # 'e' is the letter that was added.
 
 def find_the_difference(s, t)
-    diff = Hash.new(0)
-    s.chars.each { |letter| diff[letter] += 1 }
-    t.chars.each { |letter| diff[letter] -= 1 }
-    diff.key(-1)
+  diff = Hash.new(0)
+  s.chars.each { |letter| diff[letter] += 1 }
+  t.chars.each { |letter| diff[letter] -= 1 }
+  diff.key(-1)
 end

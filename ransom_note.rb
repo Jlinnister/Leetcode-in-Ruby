@@ -13,15 +13,15 @@
 # canConstruct("aa", "aab") -> true
 
 def can_construct(ransom_note, magazine)
-    counts = Hash.new(0)
-    magazine.chars.each do |letter|
-        counts[letter] += 1
-    end
+  counts = Hash.new(0)
+  magazine.chars.each do |letter|
+    counts[letter] += 1
+  end
 
-    ransom_note.chars.each do |letter|
-        counts[letter] -= 1
-        return false if counts[letter] < 0
-    end
+  ransom_note.chars.each do |letter|
+    counts[letter] -= 1
+    return false if counts[letter] < 0
+  end
 
-    true
+  true
 end
